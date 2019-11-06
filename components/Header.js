@@ -4,7 +4,10 @@ import { withRouter } from 'next/router'
 const Header = ({ router: { pathname } }) => (
   <header>
     <Link href='/'>
-      <a className={pathname === '/' ? 'is-active' : ''}>Home</a>
+      <a>Home</a>
+    </Link>
+    <Link href='/other'>
+      <a>Other</a>
     </Link>
     <style jsx>{`
       header {
