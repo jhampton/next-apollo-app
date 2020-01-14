@@ -1,12 +1,12 @@
-import Link from 'next/link'
-import { withRouter } from 'next/router'
+import Link from "next/link";
+import { withRouter } from "next/router";
 
 const Header = ({ router: { pathname } }) => (
   <header>
-    <Link href='/'>
+    <Link href="/">
       <a>Home</a>
     </Link>
-    <Link href='/other'>
+    <Link href="/other">
       <a>Other</a>
     </Link>
     <style jsx>{`
@@ -23,6 +23,6 @@ const Header = ({ router: { pathname } }) => (
       }
     `}</style>
   </header>
-)
+);
 
-export default withRouter(Header)
+export default withRouter(Header);
